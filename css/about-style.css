@@ -180,6 +180,9 @@ nav a.active{
 }
 
 @media screen and (max-width:1000px){
+    .about{
+        width:100%;
+    }
     .about-section{
         background-size: cover;
         padding: 100px 40px;
@@ -190,6 +193,11 @@ nav a.active{
 }
 
 @media screen and (max-width:600px){
+    .about{
+        width:100%;
+        margin:0;
+        flex-basis: 100%;
+    }
     .about-section{
         padding: 0;
     }
@@ -287,6 +295,7 @@ ul {
 
 
 @media(max-width: 768px) {
+
     header{
         margin-bottom: 50px;
     }
