@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TBD website</title>
+        <link rel="stylesheet" href="css/product.css">
+        <link rel="stylesheet" href="boxicons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://kit.fontawesome.com/4c572848eb.js" crossorigin="anonymous"></script>
+        <style>
+            .dot {
+                 height: 24px;
+                 width: 24px;
+                 border-radius: 24px;
+                 background-color: black;
+                 position: fixed; 
+                 top: 0;
+                 left: 0;
+                 pointer-events: none;
+                 z-index: 99999999; /* so that it stays on top of all other elements */
+                 
+             } 
+         </style>
+    </head>
+    <body>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    <header>
+        <a href="landing.html" class="logo">TBD</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="landing.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="bx bx-menu" id="menu-icon"><i class="ri-menu-line"></i></div>
+        <div class="dropdown">
+            <ul>
+                <li><a href="landing.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+        <section class='product-page'>
+            <div class="product-details">
+                <div class="product-image">
+                    <img src="images/Elderflame_vandal_0.png" alt="Elderflame Vandal">
+                </div>
+                <div class="product-text">
+                    <span class="product-category"><img src="images/Valorant-logo.png"></span>
+                    <h3>ELDERFLAME VANDAL</h3>
+                    <span class="product-price">$8999.98</span>
+                    <p>The Elderflame Vandal in Valorant is a striking embodiment of futuristic mayhem, boasting a neon-infused design that pulsates with energy. Its sleek, angular frame and vibrant color scheme evoke a sense of digital chaos, perfectly encapsulating the high-tech warfare of Valorant's universe. <br/><br/>
+                        Adorned with glitchy effects and electrifying accents, the Elderflame Vandal stands out as a symbol of rebellion and cutting-edge style on the battlefield, striking fear into the hearts of opponents with every burst of its deadly firepower.</p>
+                    <div class="product-color">
+                        <form>
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="red">
+                                    <input type="radio" id="red" name="color">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="black">
+                                    <input type="radio" id="black" name="color" >
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="blue">
+                                    <input type="radio" id="blue" name="color">
+                                    <span class="color-3"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="product-quantity">
+                        <label for="quantity">Quantity:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="1">
+                    </div>
+
+                    <div class="product-btn">
+                            <a href="#" class="cart">Add To Cart</a>
+                            <a href="#" class="wishlist">Add To Wishlist</a>
+                    </div>
+                    <a href="#" class="help-btn">Need Any Help?</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+             <div class="row">
+               <div class="footer-col">
+                 <h4>company</h4>
+                 <ul>
+                   <li><a href="about.html">About us</a></li>
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>get help</h4>
+                 <ul>
+                   <li><a href="contact.html">Contact Us</a></li>
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>online shop</h4>
+                 <ul>
+                   <li><a href="landing.html#cards">Guns</a></li>
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>follow us</h4>
+                 <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+               </div>
+             </div>
+            </div>
+         </footer>
+        <script src="js/cursor.js"></script>
+        <script>
+            // Select all the radio buttons
+        var radios = document.querySelectorAll('input[type="radio"][name="color"]');
+
+        // Listen for changes on each radio button
+        radios.forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                // Get the selected radio button value
+                var color = this.id;
+
+                // Select the image
+                var image = document.querySelector('.product-image img');
+
+                // Change the image source based on the selected color
+                if (color === 'red') {
+                    image.src = 'images/Elderflame_vandal_1.png';
+                } else if (color === 'black') {
+                    image.src = 'images/Elderflame_vandal_0.png';
+                } else if (color === 'blue') {
+                    image.src = 'images/Elderflame_vandal_2.png';
+                }
+            });
+        });
+        </script>
+        <script src="js/menubutton.js"></script>
+    </body>
+</html>
