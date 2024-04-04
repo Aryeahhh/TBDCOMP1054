@@ -10,7 +10,7 @@
 }
 
 header {
-    position: fixed;
+    position: relative;
     right: 0;
     left: 0;
     top: 0;
@@ -24,7 +24,7 @@ header {
     padding: 20px 50px;
     background: transparent;
     border-radius: 20px;
-    background-color: #393E46;
+    background-color: #2f333a;
 }
 
 body {

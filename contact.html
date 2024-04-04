@@ -6,7 +6,7 @@
         <title>TBD website</title>
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="boxicons.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,10 +24,12 @@
                  left: 0;
                  pointer-events: none;
                  z-index: 99999999; /* so that it stays on top of all other elements */
-                 @media(screen-width: 768px) {
+             } 
+             @media(max-width: 768px) {
+                .dot {
                     display: none;
                 }
-             } 
+            }
          </style>
     </head>
     <body>
@@ -71,7 +73,7 @@
     </header>
     <section class="contactus">
         <div class="contact-container">
-            <main class="contact-row">
+            <section class="contact-row">
                 <section class="col left">
                     
     
@@ -122,21 +124,21 @@
                     <form class="messageForm">
                         
                         <div class="inputGroup halfWidth">
-                            <input type="text" name="" required="required">
+                            <input type="text" required="required">
                             <label>Your Name</label>
                         </div>
     
                         <div class="inputGroup halfWidth">
-                            <input type="email" name="" required="required">
+                            <input type="email" required="required">
                             <label>Email</label>
                         </div>
     
                         <div class="inputGroup fullWidth">
-                            <input type="text" name="" required="required">
+                            <input type="text" required="required">
                             <label>Subject</label>
                         </div>
     
-                        <div class="inputGroup fullWidth"class="">
+                        <div class="inputGroup fullWidth">
                             <textarea required="required"></textarea>
                             <label>Say Something</label>
                         </div>
@@ -147,7 +149,7 @@
     
                     </form>
                 </section>
-            </main>
+            </section>
         </div>
     </section>
     <footer class="footer">

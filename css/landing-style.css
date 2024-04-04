@@ -9,7 +9,7 @@
 }
 
 header {
-    position: fixed;
+    position: relative;
     right: 0;
     left: 0;
     top: 0;
@@ -17,13 +17,14 @@ header {
     width: calc(100% - 200px);
     /* Adjust the width */
     margin: 20px 100px;
+    margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
     background: transparent;
     border-radius: 20px;
-    background-color: #393E46;
+    background-color: #2f333a;
 
 }
 
@@ -31,7 +32,9 @@ body {
     background-color: #222831;
     cursor: none;
 }
-
+.hero-header{
+    background-image: url("../images/another_bg_2.jpg");
+}
 .logo {
     font-size: 30px;
     font-weight: 700;
@@ -124,7 +127,6 @@ nav a.active{
 }
 
 .hero {
-    background-image: url("../images/another_bg_2.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
