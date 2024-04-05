@@ -258,7 +258,7 @@ nav a.active{
 
 .products h1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 86px;
+    font-size: 68px;
     padding: 50px 30px;
 }
 
@@ -549,9 +549,13 @@ ul {
     color: #CC3843;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     nav ul {
         display: none;
+    }
+    header{
+        margin: 0;
+        width: 100%;
     }
     #menu-icon {
         display: block;
@@ -560,20 +564,23 @@ ul {
         display: block;
     }
     .hero-container h1 {
-        font-size: 48px;
+        font-size: 54px;
         width: 100%;
         margin: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero-container h1 {
-        font-size: 36px;
+        font-size: 42px;
         width: 100%;
         margin: 0;
     }
-    header {
-        margin-bottom: 50px;
+    .products h1 {
+        font-size: 58px;
+    }
+    .btn-hover {
+        font-size: 42px;
     }
     .hero-container img {
         transform: scale(0.8) rotate(35deg);
@@ -584,10 +591,7 @@ ul {
     }
 }
 
-@media (max-width: 576px) {
-    .footer-col {
-        width: 100%;
-    }
+@media screen and (max-width: 576px) {
     .card {
         width: 80%;
     }

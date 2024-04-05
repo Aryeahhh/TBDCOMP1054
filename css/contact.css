@@ -65,7 +65,6 @@ nav ul li a {
     font-weight: 500;
     border-bottom: 2px solid transparent;
     position: relative;
-    /* Add this line if you want the ::after and ::before pseudo-elements to position themselves relative to the anchor tags */
 }
 
 nav ul li a::after,
@@ -336,20 +335,7 @@ textarea::-webkit-scrollbar-thumb{
     color: #000;
 }
 
-@media(max-width: 1100px){
-	.messageForm .halfWidth{
-		flex-basis: 100%;
-	}
-}
-@media(max-width: 900px){
-	.contact-container .contact-row{
-		flex-wrap: wrap;
-	}
-	.contact-row section.left, .contact-row section.right{
-		flex-basis: 100%;
-		margin: 0px;
-	}
-}
+
 .container {
     max-width: 1170px;
     margin: auto;
@@ -437,29 +423,6 @@ ul {
     color: #24262b;
     background-color: #CC3843;
 }
-
-
-/*responsive*/
-@media(max-width: 788px){
-    header{
-        margin-bottom: 50px;
-    }
-    .hero-container img{
-        transform: scale(0.8) rotate(35deg);
-    }
-}
-@media(max-width: 768px) {
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width: 574px) {
-    .footer-col {
-        width: 100%;
-    }
-}
 .dropdown{
     display: none;
     position: absolute;
@@ -488,7 +451,11 @@ ul {
 .dropdown a:hover{
     color: #CC3843;
 }
-@media(max-width: 992px){
+@media screen and (max-width: 992px){
+    header{
+        margin: 0;
+        width: 100%;
+    }
     nav ul{
         display: none;
     }
@@ -498,4 +465,33 @@ ul {
     .dropdown{
         display: block;
     }
+}
+@media screen and (max-width: 768px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1100px){
+	.messageForm .halfWidth{
+		flex-basis: 100%;
+	}
+}
+@media screen and (max-width: 900px){
+	.contact-container .contact-row{
+		flex-wrap: wrap;
+	}
+    .inputGroup .btn{
+        top: 10px;
+    }
+    .iconGroup{
+        margin: 0px 20px;
+    }
+    .iconGroup .details span{
+        font-size: 14px;
+    }
+	.contact-row section.left, .contact-row section.right{
+		flex-basis: 100%;
+		margin: 0px;
+	}
 }

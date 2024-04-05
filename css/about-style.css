@@ -29,6 +29,9 @@ header {
 body {
     background-color: #CC3843;
     cursor: none;
+    background-image: url("../images/contact_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .logo {
@@ -125,16 +128,15 @@ nav a.active{
 
 
 .about-section{
-    background: url("../images/landing_bg_2.jpg") no-repeat left;
-    background-size: 55%;
-    background-color: #CC3843;
+    
+    background-color: transparent;
     overflow: hidden;
     padding: 100px 0;
-    margin:0px 100px;
+    
 }
 
 .inner-container{
-    width: 55%;
+    width: 100%;
     float: right;
     background-color: #222831;
     padding: 150px;
@@ -166,41 +168,7 @@ nav a.active{
     font-size: 13px;
 }
 
-@media screen and (max-width:1200px){
-    .inner-container{
-        padding: 80px;
-    }
-    header{
-        position: relative;
-    }
 
-}
-
-@media screen and (max-width:1000px){
-    .about{
-        width:100%;
-    }
-    .about-section{
-        background-size: cover;
-        padding: 100px 40px;
-    }
-    .inner-container{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:600px){
-
-    .about-section{
-        padding: 0;
-    }
-    .inner-container{
-        box-sizing: border-box;
-        padding: 20px;
-        width: 100%;
-
-    }
-}
 .container {
     max-width: 1170px;
     margin: auto;
@@ -290,27 +258,7 @@ ul {
 }
 
 
-@media(max-width: 768px) {
 
-    header{
-        margin-bottom: 50px;
-    }
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-    .about .about-section .inner-container .values{
-        flex-direction: column;
-    
-    }
-    
-}
-
-@media(max-width: 574px) {
-    .footer-col {
-        width: 100%;
-    }
-}
 .dropdown{
     display: none;
     position: absolute;
@@ -339,9 +287,14 @@ ul {
 .dropdown a:hover{
     color: #CC3843;
 }
-@media(max-width: 992px){
+
+@media screen and (max-width: 992px){
     nav ul{
         display: none;
+    }
+    header{
+        margin:0;
+        width: 100%;
     }
     #menu-icon{
         display: block;
@@ -349,4 +302,41 @@ ul {
     .dropdown{
         display: block;
     }
+    .about{
+        width:100%;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1200px){
+    
+    .inner-container{
+        padding: 80px;
+    }
+    header{
+        position: relative;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .about .about-section .inner-container .values{
+        flex-direction: column;
+    
+    }
+    .about-section{
+        background-image: none;
+    }
+    .inner-container{
+        box-sizing: border-box;
+        padding: 20px;
+        width: 100%;
+
+    }
+    
 }
