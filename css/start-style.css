@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
+@import url('https://fonts.googleapis.com/css?family=Khula:700');
 @import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
 .hidden {
   opacity:0;
 }

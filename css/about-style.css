@@ -1,3 +1,4 @@
+/*Global Styles*/
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +7,7 @@
     list-style: none;
     text-decoration: none;
 }
-
+/*Header Styles*/
 header {
     position: relative;
     right: 0;
@@ -14,7 +15,6 @@ header {
     top: 0;
     z-index: 1000;
     width: calc(100% - 200px);
-    /* Adjust the width */
     margin: 20px 100px;
     display: flex;
     align-items: center;
@@ -33,14 +33,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-
+/*Logo Styles*/
+.logo img{
+    max-width: 4em;
 }
-
+/*Navigation Styles*/
 nav {
     padding: 0;
 }
@@ -65,7 +62,6 @@ nav ul li a {
     font-weight: 500;
     border-bottom: 2px solid transparent;
     position: relative;
-    /* Add this line if you want the ::after and ::before pseudo-elements to position themselves relative to the anchor tags */
 }
 
 nav ul li a::after,
@@ -126,7 +122,7 @@ nav a.active{
 }
 
 
-
+/*About Section Styles*/
 .about-section{
     
     background-color: transparent;
@@ -168,7 +164,7 @@ nav a.active{
     font-size: 13px;
 }
 
-
+/*Footer Styles*/
 .container {
     max-width: 1170px;
     margin: auto;
@@ -326,7 +322,7 @@ ul {
         margin-bottom: 30px;
     }
     .about .about-section .inner-container .values{
-        flex-direction: column;
+        flex-direction: row;
     
     }
     .about-section{

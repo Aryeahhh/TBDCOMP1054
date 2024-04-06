@@ -1,5 +1,4 @@
-
-/**/
+/*GLobal Styles*/
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +7,7 @@
     list-style: none;
     text-decoration: none;
 }
-
+/*Header Styles*/
 header {
     position: relative;
     right: 0;
@@ -33,14 +32,10 @@ body {
     background-size: cover;
     cursor: none;
 }
-
-.logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-
+.logo img{
+    max-width: 4em;
 }
-
+/*Navigation Styles*/
 nav {
     padding: 0;
 }
@@ -123,6 +118,7 @@ nav a.active{
     cursor: pointer;
     display: none;
 }
+/*Contact Styles*/
 .contactus{
     width: 70%;
     height: auto;
@@ -334,7 +330,7 @@ textarea::-webkit-scrollbar-thumb{
 	background-position: left bottom;
     color: #000;
 }
-
+/*Footer Styles*/
 
 .container {
     max-width: 1170px;

@@ -1,3 +1,4 @@
+/* Global Styles */
 *{
     margin: 0px;
     padding: 0px;
@@ -23,12 +24,10 @@ header{
     background-color: #2f333a;
 
 }
-.logo{
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-
+.logo img{
+    max-width: 4em;
 }
+/*Navigation Styles*/
 nav{
     padding:0;
 }
@@ -98,6 +97,7 @@ nav a.active::after, nav a.active::before {
 body{
     background-color: #CC3843;
 }
+/*Product Styles*/
 .product-page{
     padding-top: 10%;
 }
@@ -301,6 +301,7 @@ a{
 .product-image:hover::before {
     filter: blur(2px); /* Add this line */
 }
+/*Footer Styles*/
 .container {
     max-width: 1170px;
     margin: auto;

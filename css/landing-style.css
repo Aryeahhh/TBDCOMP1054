@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+/*Global Styles*/
 * {
     padding: 0;
     margin: 0;
@@ -35,13 +36,10 @@ body {
 .hero-header{
     background-image: url("../images/another_bg_2.jpg");
 }
-.logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-
+.logo img{
+    max-width: 4em;
 }
-
+/*Navbar*/
 nav {
     padding: 0;
 }
@@ -66,7 +64,6 @@ nav ul li a {
     font-weight: 500;
     border-bottom: 2px solid transparent;
     position: relative;
-    /* Add this line if you want the ::after and ::before pseudo-elements to position themselves relative to the anchor tags */
 }
 
 nav ul li a::after,
@@ -125,7 +122,7 @@ nav a.active{
     cursor: pointer;
     display: none;
 }
-
+/*Hero Section*/
 .hero {
     background-size: cover;
     display: flex;
@@ -221,7 +218,7 @@ nav a.active{
 .emph {
     color: #CC3843;
 }
-
+/*Marquee Section*/
 .marquee {
     margin-top: -5%;
     background-color: #000;
@@ -247,7 +244,17 @@ nav a.active{
     color: #CC3843;
     animation: move-rt1 6000ms linear infinite;
 }
+@keyframes move-rt1 {
+    0% {
+        transform: translateX(0);
+    }
 
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*Products Section*/
 .products {
     background-color: #222831;
     border-top-left-radius: 60px;
@@ -262,15 +269,6 @@ nav a.active{
     padding: 50px 30px;
 }
 
-@keyframes move-rt1 {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 
 .card-container {
@@ -430,7 +428,7 @@ nav a.active{
 .card:nth-child(4) {
     transition-delay: 600ms;
 }
-
+/*Footer Styles*/
 .container {
     max-width: 1170px;
     margin: auto;
