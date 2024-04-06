@@ -1,3 +1,4 @@
+//Burger Icon animation
 const togglebtn = document.querySelector('.bx-menu');
 const toggleicon = document.querySelector('.bx-menu i');
 const dropdown = document.querySelector('.dropdown');

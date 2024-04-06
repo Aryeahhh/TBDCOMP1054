@@ -1,6 +1,7 @@
 // function([string1, string2],target id,[color1,color2])    
+//Text to be written
 consoleText(['Hello There!', 'Made in a hurry.'], 'text',['#CC3843']);
-
+//Animation terminal text (I saw this online on a website, this is a poor unoptimized recreation)
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
   var visible = true;
