@@ -419,7 +419,7 @@ ul {
     color: #CC3843;
 }
 
-@media screen and(max-width: 574px) {
+@media screen and (max-width: 574px) {
     .product-text h3{
         font-size: 1.6rem;
     }
